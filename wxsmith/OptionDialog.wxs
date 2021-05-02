@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="OptionDialog">
+		<title>Options</title>
+		<centered>1</centered>
+		<size>400,200</size>
+		<fg>#FFFFFF</fg>
+		<bg>#000000</bg>
+		<font>
+			<size>11</size>
+			<style>normal</style>
+			<weight>normal</weight>
+			<underlined>0</underlined>
+			<family>modern</family>
+			<face>Consolas</face>
+		</font>
+		<style>wxCAPTION|wxSYSTEM_MENU</style>
+		<handler function="OnDialogClose" entry="EVT_CLOSE" />
+		<object class="wxPanel" name="wxID_ANY" variable="GamePausePanel" member="yes">
+			<pos>0,0</pos>
+			<size>400,30</size>
+			<style>0</style>
+			<object class="wxStaticText" name="wxID_ANY" variable="GamePauseLabel" member="yes">
+				<label>GAME PAUSED</label>
+				<pos>0,0</pos>
+				<size>400,50</size>
+				<fg>#F39C12</fg>
+				<bg>#101010</bg>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>modern</family>
+					<face>Consolas</face>
+				</font>
+				<style>wxALIGN_CENTRE</style>
+			</object>
+		</object>
+		<object class="wxStaticLine" name="wxID_ANY" variable="GamePauseUnderLine" member="yes">
+			<pos>0,30</pos>
+			<size>400,2</size>
+			<fg>wxSYS_COLOUR_WINDOWFRAME</fg>
+			<bg>wxSYS_COLOUR_WINDOWFRAME</bg>
+		</object>
+		<object class="wxButton" name="ID_BUTTONSAVE" variable="SaveOptionBtn" member="yes">
+			<label>Save Options</label>
+			<pos>100,175</pos>
+			<size>200,25</size>
+			<fg>#FFFFFF</fg>
+			<bg>wxSYS_COLOUR_WINDOWFRAME</bg>
+			<style>wxBORDER_NONE|wxTRANSPARENT_WINDOW</style>
+			<handler function="OnSaveOptionBtnClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxPanel" name="wxID_ANY" variable="KeyBindsPanel" member="yes">
+			<pos>0,40</pos>
+			<size>200,50</size>
+			<style>wxBORDER_SIMPLE</style>
+			<object class="wxChoice" name="ID_KEYCHOICE" variable="KeyBindsMoveChoice" member="yes">
+				<content>
+					<item>Arrows</item>
+					<item>WSAD</item>
+				</content>
+				<pos>8,8</pos>
+			</object>
+			<object class="wxStaticText" name="wxID_ANY" variable="KeyBindsMoveLabel" member="yes">
+				<label>Movement&#x0A;Keys</label>
+				<pos>120,4</pos>
+				<size>70,40</size>
+				<fg>#FFFFFF</fg>
+				<style>wxALIGN_CENTRE</style>
+			</object>
+		</object>
+		<object class="wxPanel" name="wxID_ANY" variable="GameLangPanel" member="yes">
+			<pos>200,40</pos>
+			<size>200,50</size>
+			<style>wxBORDER_SIMPLE</style>
+			<object class="wxChoice" name="ID_LANGCHOICE" variable="GameLangChoise" member="yes">
+				<content>
+					<item>Polski</item>
+					<item>English</item>
+				</content>
+				<pos>8,8</pos>
+			</object>
+			<object class="wxStaticText" name="wxID_ANY" variable="GameLangLabel" member="yes">
+				<label>Language</label>
+				<pos>120,12</pos>
+				<size>70,40</size>
+				<fg>#FFFFFF</fg>
+				<style>wxALIGN_CENTRE</style>
+			</object>
+		</object>
+		<object class="wxStaticText" name="wxID_ANY" variable="SpaceShootLabel" member="yes">
+			<label>Label</label>
+			<pos>10,100</pos>
+			<size>380,20</size>
+			<font>
+				<size>12</size>
+				<style>normal</style>
+				<weight>normal</weight>
+				<underlined>0</underlined>
+				<family>modern</family>
+				<face>Consolas</face>
+			</font>
+			<style>wxALIGN_CENTRE</style>
+		</object>
+	</object>
+</wxsmith>

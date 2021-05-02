@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="PacmanFrame">
+		<title>Pacman</title>
+		<centered>1</centered>
+		<size>800,454</size>
+		<focused>1</focused>
+		<fg>#000000</fg>
+		<bg>#000000</bg>
+		<font>
+			<size>12</size>
+			<style>normal</style>
+			<weight>normal</weight>
+			<underlined>0</underlined>
+			<family>modern</family>
+			<face>Consolas</face>
+		</font>
+		<id_arg>0</id_arg>
+		<style>wxCAPTION|wxSYSTEM_MENU|wxCLOSE_BOX|wxMINIMIZE_BOX|wxBORDER_SIMPLE|wxWANTS_CHARS|wxCLIP_CHILDREN</style>
+		<handler function="OnClose" entry="EVT_CLOSE" />
+		<object class="wxPanel" name="wxID_ANY" variable="BottomPanel" member="yes">
+			<pos>0,418</pos>
+			<size>800,36</size>
+			<fg>#FFFFFF</fg>
+			<bg>#000000</bg>
+			<style>0</style>
+			<object class="wxStaticText" name="wxID_ANY" variable="Score" member="yes">
+				<label>Score:</label>
+				<pos>0,0</pos>
+				<size>120,16</size>
+			</object>
+			<object class="wxStaticText" name="wxID_ANY" variable="PlayerScore" member="yes">
+				<label>0</label>
+				<pos>120,0</pos>
+				<size>280,16</size>
+			</object>
+			<object class="wxStaticText" name="wxID_ANY" variable="HighScore" member="yes">
+				<label>High Score:</label>
+				<pos>0,16</pos>
+				<size>120,20</size>
+			</object>
+			<object class="wxStaticText" name="wxID_ANY" variable="PlayerHighScore" member="yes">
+				<label>0</label>
+				<pos>120,16</pos>
+				<size>280,20</size>
+			</object>
+			<object class="wxStaticText" name="wxID_ANY" variable="TextInfo1" member="yes">
+				<label>Press &apos;Enter&apos; To Release</label>
+				<pos>550,0</pos>
+				<size>250,16</size>
+				<style>wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticText" name="wxID_ANY" variable="TextInfo2" member="yes">
+				<label>Use Arrows To Move</label>
+				<pos>550,16</pos>
+				<size>250,16</size>
+				<style>wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticText" name="wxID_ANY" variable="TextAuthor" member="yes">
+				<label>GAME PAUSED</label>
+				<pos>400,0</pos>
+				<size>150,36</size>
+				<fg>#787878</fg>
+				<style>wxALIGN_CENTRE</style>
+			</object>
+		</object>
+		<object class="wxPanel" name="wxID_ANY" variable="UpperPanel" member="yes">
+			<pos>0,0</pos>
+			<size>800,18</size>
+			<fg>#FFFFFF</fg>
+			<bg>#000000</bg>
+			<style>0</style>
+			<object class="wxStaticText" name="wxID_ANY" variable="TextTimeLeft" member="yes">
+				<label>Time Left:</label>
+				<pos>20,0</pos>
+				<size>100,18</size>
+			</object>
+			<object class="wxStaticText" name="wxID_ANY" variable="TimeLeftTime" member="yes">
+				<label>0</label>
+				<pos>120,0</pos>
+				<size>120,18</size>
+			</object>
+			<object class="wxStaticText" name="wxID_ANY" variable="TextMaxKropek" member="yes">
+				<label>/ 0</label>
+				<pos>720,0</pos>
+				<size>50,18</size>
+			</object>
+			<object class="wxStaticText" name="wxID_ANY" variable="TextCurrentKropek" member="yes">
+				<label>0</label>
+				<pos>660,0</pos>
+				<size>50,18</size>
+				<style>wxALIGN_RIGHT</style>
+			</object>
+			<object class="wxBitmapButton" name="ChangeSettingID" variable="ChangeSettingBtn" member="yes">
+				<bitmap>PacmanImages\Icon\settings_mark.png</bitmap>
+				<disabled>PacmanImages\Icon\settings_mark.png</disabled>
+				<selected>PacmanImages\Icon\settings_mark.png</selected>
+				<focus>PacmanImages\Icon\settings_mark.png</focus>
+				<pos>0,0</pos>
+				<size>20,20</size>
+				<style>wxBU_AUTODRAW|wxTRANSPARENT_WINDOW</style>
+				<handler function="OnChangeSettingBtnClick" entry="EVT_BUTTON" />
+			</object>
+		</object>
+	</object>
+</wxsmith>
